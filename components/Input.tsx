@@ -140,7 +140,7 @@
         link.click();
         link.remove();
         window.URL.revokeObjectURL(url);
-      } catch (err) {
+      } catch {
         setError("Failed to download image");
       } finally {
         setDownloading(false);
